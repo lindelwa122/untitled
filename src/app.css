@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffba);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -51,33 +51,79 @@ body {
 
 nav {
   font-size: 1.5em;
-  padding: 30px 30px;
+  /* padding: 30px 30px; */
+  padding: 20px;
+  font-family: 'Imperial Script'
 }
 
 section.hero {
-  /* border: 1px solid tomato; */
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.hero > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px !important;
+  }
+
+  section.hero > .text > .content {
+    text-align: center;
+    line-height: 2em !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 30px;
+  }
+
+  section.hero > .text {
+    width: 50%;
+    padding: 20px 80px !important;
+  }
+
+  .image-wrapper {
+    display: block !important;
+    width: 35%;
+  }
+
+  .shade {
+    display: block !important;
+    height: 100%;
+    position: absolute;
+    right: 17%;
+    width: 22%;
+    background: linear-gradient(95.38deg, rgb(33, 37, 41) 53.74%, rgba(33, 37, 41, 0) 83.91%);
+  }
+}
+
 section.hero > .text {
-  width: 50%;
-  padding: 20px 80px;
+  /* width: 50%;
+  padding: 20px 80px; */
+  padding: 20px;
 }
 
 section.hero > .text > .title > h1 {
   font-size: 3em;
+  margin: 0;
+  font-family: 'Playfair Display';
 }
 
 section.hero > .text > .content {
-  font-size: 1.5em;
+  font-family: Mulish;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 
 .image-wrapper {
-  width: 35%;
-  flex: 1;
+  display: none;
+  /* width: 35%;
+  flex: 1; */
 }
 
 img {
@@ -87,21 +133,23 @@ img {
 }
 
 .shade {
-  height: 100%;
+  display: none;
+  /* height: 100%;
   position: absolute;
-  right: 20%;
-  width: 25%;
-  background: linear-gradient(95.38deg, rgb(33, 37, 41) 53.74%, rgba(33, 37, 41, 0) 83.91%);
+  right: 17%;
+  width: 22%;
+  background: linear-gradient(95.38deg, rgb(33, 37, 41) 53.74%, rgba(33, 37, 41, 0) 83.91%); */
 }
 
 button {
+  margin-top: 20px;
   padding: 20px;
   outline: none;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   transition: all 1s ease-in-out;
-  animation: button-shaking 3s ease-in 1s 3 forwards;
+  /* animation: button-shaking 3s ease-in 1s 3 forwards; */
 }
 
 button:hover {
