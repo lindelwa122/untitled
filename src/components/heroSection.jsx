@@ -36,6 +36,8 @@ const HeroSection = () => {
                     <p>Lots of love, Nqabenhle.</p>
                 </div>
                 <button onClick={handleClick} className={confetti && 'button-shaking'}>Press Me! Hooray 🎉</button>
+
+                <div className="gift-location">Find your gift <a href="https://github.com/lindelwa/gift">here</a>.</div>
             </div>
             <div className="shade"></div>
             <div className="image-wrapper">
