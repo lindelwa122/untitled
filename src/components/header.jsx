@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <nav>
-            <div>Clariana Tania</div>
+            <div>Tariro Mashanda</div>
         </nav>
     )
 };
