@@ -1,13 +1,13 @@
 body {
   background-color: rgb(33, 37, 41);
   color: #fafafa;
-}
+} 
 
 nav {
   font-size: 1.5em;
   padding: 20px;
-  font-family: 'Imperial Script'
-}
+  font-family: 'Imperial Script';
+} 
 
 section.hero {
   height: 100%;
@@ -71,6 +71,12 @@ section.hero > .text > .content {
   line-height: 1.5em;
 }
 
+.gift-location {
+  font-family: Mulish;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
 .image-wrapper {
   display: none;
 }
@@ -101,7 +107,7 @@ button.button-shaking {
 
 button:hover {
   transform: scale(0.8);
-}
+} 
 
 @keyframes button-shaking {
   0% {
